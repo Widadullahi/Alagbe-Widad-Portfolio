@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
@@ -89,42 +90,59 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="border-t border-border py-20">
+    <section id="projects" className="border-t border-border py-24">
       <div className="px-6 lg:px-16">
-        <h2 className="font-heading text-sm font-bold uppercase tracking-widest text-primary">
-          Projects
-        </h2>
-        <p className="mt-4 font-heading text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          {projects.length}+ Projects Built // MERN Stack // Full-Stack Solutions
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5 }}
+        >
+          <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-primary">
+            Portfolio
+          </p>
+          <h2 className="mt-2 font-display text-4xl font-bold text-foreground md:text-5xl">
+            Featured Projects
+          </h2>
+          <p className="mt-4 font-body text-sm text-muted-foreground">
+            {projects.length}+ projects built with the MERN Stack and modern web technologies.
+          </p>
+        </motion.div>
 
-        <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project) => (
-            <a
+        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {projects.map((project, i) => (
+            <motion.a
               key={project.title}
               href={project.url}
               target="_blank"
               rel="noreferrer"
-              className="group rounded-lg border border-border bg-card p-6 shadow-sm transition-all hover:border-primary/40 hover:shadow-md"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: (i % 6) * 0.08 }}
+              className="group relative overflow-hidden rounded-2xl border border-border bg-card p-7 transition-all hover:border-primary/30"
+              style={{ boxShadow: "var(--shadow-card)" }}
+              whileHover={{ y: -4, boxShadow: "var(--shadow-card-hover)" }}
             >
+              <div className="absolute top-0 right-0 h-20 w-20 opacity-0 transition-opacity group-hover:opacity-100" style={{ background: "radial-gradient(circle at top right, hsl(217 91% 55% / 0.08), transparent)" }} />
               <h3 className="flex items-center gap-2 font-heading text-lg font-bold text-foreground transition-colors group-hover:text-primary">
                 {project.title}
-                <ArrowUpRight className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100 text-primary" />
+                <ArrowUpRight className="h-4 w-4 opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-primary" />
               </h3>
               <p className="mt-3 font-body text-sm leading-relaxed text-muted-foreground">
                 {project.description}
               </p>
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap gap-2">
                 {project.tech.map((t) => (
                   <span
                     key={t}
-                    className="rounded bg-secondary px-2 py-1 font-body text-xs text-secondary-foreground"
+                    className="rounded-full bg-secondary px-3 py-1 font-body text-xs font-medium text-secondary-foreground"
                   >
                     {t}
                   </span>
                 ))}
               </div>
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>
