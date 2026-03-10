@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -10,8 +10,7 @@ const ContactSection = () => {
 
         <div className="mt-10 max-w-lg space-y-6">
           <p className="font-body text-base text-muted-foreground">
-            I believe technology should solve real problems and make life easier. My goal is to
-            build tools that empower people, businesses, and communities.
+            I believe technology should solve real problems and make life easier. My goal is to build tools that empower people, businesses, and communities.
           </p>
           <p className="font-body text-base text-muted-foreground">
             Have a project in mind or want to collaborate? Let's talk.
@@ -19,12 +18,23 @@ const ContactSection = () => {
 
           <div className="space-y-3">
             <a
-              href="mailto:widad@example.com"
+              href="mailto:alagbewidad814@gmail.com"
               className="flex items-center gap-3 font-body text-sm text-foreground transition-colors hover:text-primary"
             >
               <Mail className="h-4 w-4 text-primary" />
-              widad@example.com
+              alagbewidad814@gmail.com
             </a>
+            <a
+              href="tel:+2348100926871"
+              className="flex items-center gap-3 font-body text-sm text-foreground transition-colors hover:text-primary"
+            >
+              <Phone className="h-4 w-4 text-primary" />
+              +234 810 092 6871
+            </a>
+            <div className="flex items-center gap-3 font-body text-sm text-muted-foreground">
+              <MapPin className="h-4 w-4 text-primary" />
+              Lagos, Nigeria
+            </div>
             <a
               href="https://github.com/Widadullahi"
               target="_blank"
@@ -35,13 +45,13 @@ const ContactSection = () => {
               github.com/Widadullahi
             </a>
             <a
-              href="https://linkedin.com/in/widad"
+              href="https://www.linkedin.com/in/wura-ola-7b20aa316/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-3 font-body text-sm text-foreground transition-colors hover:text-primary"
             >
               <svg className="h-4 w-4 text-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              linkedin.com/in/widad
+              LinkedIn
             </a>
           </div>
         </div>
