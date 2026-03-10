@@ -11,21 +11,17 @@ const AboutSection = () => {
           <img
             src={profileImg}
             alt="Widad Alagbe"
-            className="h-64 w-64 flex-shrink-0 rounded-lg border border-border object-cover"
+            className="h-64 w-64 flex-shrink-0 rounded-lg border border-border object-cover shadow-md"
           />
           <div className="space-y-4 font-body text-base leading-relaxed text-muted-foreground">
             <p>
-              I'm a passionate full-stack developer focused on building modern web applications
-              and digital products.
+              I'm a MERN Stack Developer with hands-on experience in building responsive, user-friendly web applications using React, Node.js, Express.js, and MongoDB. I specialize in designing RESTful APIs, integrating frontend and backend systems, and deploying production-ready applications.
             </p>
             <p>
-              I enjoy turning ideas into scalable and user-friendly software solutions. I work
-              with technologies like React, Node.js, and modern databases to create fast and
-              efficient applications.
+              I enjoy turning ideas into scalable, maintainable software solutions. From client-facing websites to complex management systems and interactive games, I bring a detail-oriented approach to every project I build.
             </p>
             <p>
-              I'm constantly learning, building, and exploring new technologies in the tech
-              ecosystem.
+              Based in Lagos, Nigeria — I'm constantly learning, building, and pushing the boundaries of what's possible on the web.
             </p>
           </div>
         </div>
