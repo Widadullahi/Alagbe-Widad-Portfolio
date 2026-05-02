@@ -1,23 +1,6 @@
 import { motion } from "framer-motion";
-import { Gamepad2, ArrowUpRight } from "lucide-react";
-
-const games = [
-  {
-    title: "Medical Quiz Game",
-    description: "Test your medical knowledge with this interactive quiz game designed for healthcare students.",
-    url: "https://medicalquizgamee.netlify.app/",
-  },
-  {
-    title: "Memory Match Game",
-    description: "A classic memory matching card game — flip, match, and challenge your brain.",
-    url: "https://memorymatchgamee.netlify.app/",
-  },
-  {
-    title: "Pharmacy Snake Game",
-    description: "A fun twist on the classic snake game with a pharmacy theme — collect pills and avoid obstacles.",
-    url: "https://pharmacysnakegame.netlify.app/",
-  },
-];
+import { ArrowUpRight, Gamepad2 } from "lucide-react";
+import { games } from "@/data/portfolio";
 
 const GamesSection = () => {
   return (
@@ -30,13 +13,13 @@ const GamesSection = () => {
           transition={{ duration: 0.5 }}
         >
           <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-            Interactive
+            Interactive builds
           </p>
           <h2 className="mt-2 font-display text-4xl font-bold text-foreground md:text-5xl">
-            Games I Built
+            Games I built for the web
           </h2>
-          <p className="mt-4 font-body text-sm text-muted-foreground">
-            Fun, interactive browser games built with JavaScript.
+          <p className="mt-4 max-w-2xl font-body text-sm leading-relaxed text-muted-foreground">
+            Smaller projects where I explored engagement, browser interaction, and playful learning experiences.
           </p>
         </motion.div>
 
@@ -58,7 +41,7 @@ const GamesSection = () => {
               <h3 className="flex items-center gap-2 font-heading text-lg font-bold text-foreground transition-colors group-hover:text-primary">
                 <Gamepad2 className="h-5 w-5 text-primary" />
                 {game.title}
-                <ArrowUpRight className="h-4 w-4 opacity-0 transition-all group-hover:opacity-100 text-primary" />
+                <ArrowUpRight className="h-4 w-4 text-primary opacity-0 transition-all group-hover:opacity-100" />
               </h3>
               <p className="mt-3 font-body text-sm leading-relaxed text-muted-foreground">
                 {game.description}

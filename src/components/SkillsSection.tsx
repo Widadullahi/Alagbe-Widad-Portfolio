@@ -1,30 +1,5 @@
 import { motion } from "framer-motion";
-
-const skillGroups = [
-  {
-    title: "Frontend",
-    skills: ["React.js", "Next.js", "Tailwind CSS", "JavaScript", "TypeScript", "HTML5", "CSS3"],
-  },
-  {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "RESTful APIs", "Authentication & Authorization"],
-  },
-  {
-    title: "Database",
-    skills: ["MongoDB", "PostgreSQL"],
-  },
-  {
-    title: "Tools & Deployment",
-    skills: ["Git", "GitHub", "Docker", "Vercel", "Render", "Netlify"],
-  },
-];
-
-const stats = [
-  { value: "15+", label: "Projects Built" },
-  { value: "3+", label: "Games Developed" },
-  { value: "4+", label: "Years Experience" },
-  { value: "7+", label: "Technologies Mastered" },
-];
+import { skillGroups, stats } from "@/data/portfolio";
 
 const SkillsSection = () => {
   return (
@@ -37,14 +12,16 @@ const SkillsSection = () => {
           transition={{ duration: 0.5 }}
         >
           <p className="font-body text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-            Skills & Stats
+            Skills and stats
           </p>
           <h2 className="mt-2 font-display text-4xl font-bold text-foreground md:text-5xl">
-            What I bring to the table
+            What I bring to a project
           </h2>
+          <p className="mt-4 max-w-2xl font-body text-sm leading-relaxed text-muted-foreground">
+            I work across the product stack, with a focus on clean interfaces, dependable APIs, and launch-ready delivery.
+          </p>
         </motion.div>
 
-        {/* Stats */}
         <div className="mt-14 grid grid-cols-2 gap-5 md:grid-cols-4">
           {stats.map((stat, i) => (
             <motion.div
@@ -57,12 +34,13 @@ const SkillsSection = () => {
               style={{ boxShadow: "var(--shadow-card)" }}
             >
               <p className="font-display text-4xl font-bold gradient-text">{stat.value}</p>
-              <p className="mt-2 font-body text-xs font-medium text-muted-foreground">{stat.label}</p>
+              <p className="mt-2 font-body text-xs font-medium uppercase tracking-[0.18em] text-muted-foreground">
+                {stat.label}
+              </p>
             </motion.div>
           ))}
         </div>
 
-        {/* Skills */}
         <div className="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {skillGroups.map((group, i) => (
             <motion.div
@@ -71,9 +49,11 @@ const SkillsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.1 }}
+              className="rounded-2xl border border-border bg-card p-6"
+              style={{ boxShadow: "var(--shadow-card)" }}
             >
               <h3 className="font-heading text-lg font-bold text-foreground">{group.title}</h3>
-              <div className="mt-1 h-0.5 w-8 rounded-full bg-primary" />
+              <div className="mt-2 h-0.5 w-10 rounded-full bg-primary" />
               <ul className="mt-5 space-y-3">
                 {group.skills.map((skill) => (
                   <li key={skill} className="flex items-center gap-3 font-body text-sm text-muted-foreground">
