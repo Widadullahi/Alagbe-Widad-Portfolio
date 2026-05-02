@@ -60,7 +60,7 @@ export const projects: Project[] = [
     description:
       "A cybersecurity platform for simulating and analyzing web threats inside a controlled environment.",
     tech: ["React", "Node.js", "Express.js"],
-    url: "https://web-based-threat-simulation-system.vercel.app/",
+    url: "https://web-based-threat-simulation-system-nu.vercel.app/",
     category: "Security",
     highlight: "Threat modeling and controlled simulation workflows",
     featured: true,
