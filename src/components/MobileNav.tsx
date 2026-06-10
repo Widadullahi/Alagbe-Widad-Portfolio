@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Home, User, Code2, FolderOpen, Mail, Menu, X, Gamepad2 } from "lucide-react";
+import { Home, User, Code2, FolderOpen, Mail, Menu, X, Gamepad2, Briefcase } from "lucide-react";
 import profileImg from "@/assets/widad-profile.png";
 
 const navItems = [
   { icon: Home, label: "Home", href: "#home" },
   { icon: User, label: "About", href: "#about" },
+  { icon: Briefcase, label: "Experience", href: "#experience" },
   { icon: Code2, label: "Skills", href: "#skills" },
   { icon: FolderOpen, label: "Projects", href: "#projects" },
   { icon: Gamepad2, label: "Games", href: "#games" },

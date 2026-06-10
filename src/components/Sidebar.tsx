@@ -1,9 +1,10 @@
-import { Home, User, Code2, FolderOpen, Mail, Gamepad2 } from "lucide-react";
+import { Home, User, Code2, FolderOpen, Mail, Gamepad2, Briefcase } from "lucide-react";
 import profileImg from "@/assets/widad-profile.png";
 
 const navItems = [
   { icon: Home, label: "Home", href: "#home" },
   { icon: User, label: "About", href: "#about" },
+  { icon: Briefcase, label: "Experience", href: "#experience" },
   { icon: Code2, label: "Skills", href: "#skills" },
   { icon: FolderOpen, label: "Projects", href: "#projects" },
   { icon: Gamepad2, label: "Games", href: "#games" },
@@ -59,7 +60,7 @@ const Sidebar = () => {
 
       <div className="mt-auto px-4 w-full">
         <a
-          href="/Alagbe_Widad_Resume_CV.pdf"
+          href="/Widad Alagbe's Resume.pdf"
           download
           className="flex w-full items-center justify-center gap-2 rounded-lg px-4 py-2.5 font-body text-xs font-semibold text-sidebar-primary-foreground transition-all hover:opacity-90"
           style={{ background: "var(--gradient-premium)" }}
