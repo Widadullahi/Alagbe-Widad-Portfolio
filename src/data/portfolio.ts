@@ -14,17 +14,25 @@ export type GameProject = {
   url: string;
 };
 
+export type Experience = {
+  role: string;
+  company: string;
+  location: string;
+  period: string;
+  highlights: string[];
+};
+
 export const profile = {
   name: "Widad Alagbe",
   role: "MERN Stack Developer",
   location: "Lagos, Nigeria",
   email: "alagbewidad814@gmail.com",
   phone: "+234 810 092 6871",
-  resumeUrl: "/Alagbe_Widad_Resume_CV.pdf",
+  resumeUrl: "/Widad Alagbe's Resume.pdf",
   intro:
-    "I build fast, reliable products with strong frontend execution, while continuing to grow my backend skills with Node.js, Express, and MongoDB.",
+    "I build responsive, modern web applications with React, polished UI, and reliable backend APIs using Node.js, Express, and PostgreSQL.",
   summary:
-    "I turn ideas into clean, maintainable digital experiences with a strong focus on usability, performance, and real-world impact.",
+    "I solve problems with user-friendly digital products, clean frontend experiences, and dependable RESTful services for businesses and communities.",
   availability: "Available for freelance and full-time roles",
 };
 
@@ -38,19 +46,19 @@ export const socialLinks = [
 export const skillGroups = [
   {
     title: "Frontend",
-    skills: ["React.js", "Next.js", "Tailwind CSS", "JavaScript", "TypeScript", "HTML5", "CSS3"],
+    skills: ["HTML", "CSS", "JavaScript", "Responsive design", "React.js", "Component-driven UI"],
   },
   {
     title: "Backend",
-    skills: ["Currently improving with Node.js", "Express.js fundamentals", "REST API basics", "Authentication basics"],
+    skills: ["Node.js", "Express.js", "Golang fundamentals", "RESTful APIs", "API integration", "Authentication"],
   },
   {
     title: "Database",
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Data modeling", "Query optimization"],
+    skills: ["PostgreSQL", "MySQL", "SQL", "Data modeling", "Database reliability"],
   },
   {
     title: "Delivery",
-    skills: ["Git", "GitHub", "Sanity", "Vercel", "Render", "Netlify"],
+    skills: ["Git", "GitHub", "Render", "Vercel", "Deployment", "Cloud fundamentals"],
   },
 ];
 
@@ -96,10 +104,10 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Biltronixx",
+    title: "Biltronix Automotive",
     description: "A modern electronics e-commerce experience with streamlined product browsing.",
     tech: ["React", "Tailwind CSS", "Node.js"],
-    url: "https://biltronixx.vercel.app/",
+    url: "https://biltronix.vercel.app/",
     category: "E-commerce",
   },
   {
@@ -156,11 +164,25 @@ export const projects: Project[] = [
     title: "AIB Med Tech",
     description: "A digital healthcare platform presenting medical technology solutions and resources.",
     tech: ["React", "Tailwind CSS"],
-    url: "https://aib-medd-tech.vercel.app/",
+    url: "https://aib-medtech.vercel.app/",
     category: "Health Tech",
   },
+  {    title: "Maknova",
+    description: "Developed a clean, responsive website for Maknova with polished navigation and interface flow.",
+    tech: ["React", "Tailwind CSS", "Netlify"],
+    url: "https://maknova.netlify.app/",
+    category: "Portfolio",
+    highlight: "Led frontend implementation and UX polish for a modern brand presence.",
+  },
   {
-    title: "Anu Gadget",
+    title: "Traksend",
+    description: "Assisted the Traksend development team on frontend improvements and responsive behavior.",
+    tech: ["React", "CSS", "Client collaboration"],
+    url: "https://www.traksend.com/",
+    category: "Logistics",
+    highlight: "Supported interface consistency and delivery-ready site updates.",
+  },
+  {    title: "Anu Gadget",
     description: "An electronics storefront with a product catalog and shopping-focused UX.",
     tech: ["React", "Node.js"],
     url: "https://anugadget.vercel.app/",
@@ -183,6 +205,55 @@ export const games: GameProject[] = [
     title: "Pharmacy Snake Game",
     description: "A pharmacy-themed twist on the classic snake game with simple, playful interaction.",
     url: "https://pharmacysnakegame.netlify.app/",
+  },
+];
+
+export const experience: Experience[] = [
+  {
+    role: "Frontend Developer & Production Team Lead",
+    company: "Voyapp",
+    location: "Lagos, Nigeria",
+    period: "Apr 2026 - Current",
+    highlights: [
+      "Built React applications using Next.js and followed Figma UI specifications.",
+      "Delivered maintainable documentation updated regularly for quick team reference.",
+      "Participated in code reviews and collaborated with cross-functional teams for smooth delivery.",
+      "Improved user experience across product interfaces with polished frontend execution.",
+    ],
+  },
+  {
+    role: "Full Stack Web Developer",
+    company: "Freelance",
+    location: "Lagos, Nigeria",
+    period: "Aug 2024 - Current",
+    highlights: [
+      "Built responsive client websites and applications using React, Node.js, and Express.",
+      "Designed and maintained RESTful APIs backed by MySQL, SQLite, and PostgreSQL.",
+      "Integrated backend services with frontend interfaces for consistent data flow.",
+      "Managed source control with Git and GitHub to keep project history clean.",
+    ],
+  },
+  {
+    role: "Frontend Intern",
+    company: "Arcanum Lab",
+    location: "Lagos, Nigeria",
+    period: "Feb 2026 - May 2026",
+    highlights: [
+      "Assisted in updating site content and improving page performance.",
+      "Streamlined website functionality for enhanced browser compatibility.",
+      "Participated in Agile meetings and supported team development workflows.",
+    ],
+  },
+  {
+    role: "Front-End Web Developer",
+    company: "Freelance",
+    location: "Lagos, Nigeria",
+    period: "Dec 2023 - Jul 2024",
+    highlights: [
+      "Designed responsive websites using HTML, CSS, JavaScript, and React.",
+      "Translated UI designs into functional, reusable frontend components.",
+      "Delivered on client requirements with clean, maintainable code.",
+    ],
   },
 ];
 

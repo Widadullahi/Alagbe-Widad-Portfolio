@@ -68,10 +68,10 @@ const AboutSection = () => {
           >
             <div className="space-y-5 font-body text-base leading-relaxed text-muted-foreground">
               <p>
-                I&apos;m a <span className="font-semibold text-foreground">{profile.role}</span> with 3+ years of hands-on experience building responsive web applications, especially on the frontend with React and modern UI tools.
+                I&apos;m a <span className="font-semibold text-foreground">{profile.role}</span> with practical experience building responsive, modern web applications using React.js and clean interface architecture.
               </p>
               <p>
-                My work spans e-commerce, education, real estate, community platforms, and interactive web experiences. I&apos;m strongest at creating polished interfaces, responsive layouts, and clear user journeys.
+                My recent work includes business, e-commerce, logistics, and community websites backed by Node.js/Express APIs and PostgreSQL data services.
               </p>
               <p>
                 {profile.summary}
