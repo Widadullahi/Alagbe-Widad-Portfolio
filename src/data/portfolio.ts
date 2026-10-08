@@ -150,7 +150,7 @@ export const projects: Project[] = [
     title: "XCan",
     description: "A modern web application with a clean interface and simple product experience.",
     tech: ["React", "CSS"],
-    url: "https://xcan.netlify.app/",
+    url: "https://xcanengineeringservice.com/",
     category: "Product",
   },
   {
